@@ -25,7 +25,9 @@ jobs:
           # 示例：
           curl -L -o opm3.xml "https://nyaa.si/?page=rss&q=one+punch+man+varyg+cr&c=0_0&f=0"
           curl -L -o asl.xml "https://nyaa.si/?page=rss&q=Anne+Shirley+subspleas&c=0_0&f=0"
-          #curl -L -o feed1.xml "https://mikanani.me/RSS/MyBangumi?token=xxxxxxxxxxxxxxxx" # 请替换成你的真实地址
+          curl -L -o a001.xml "https://nyaa.si/?page=rss&q=Alma-chan+wa+Kazoku+ni+Naritai+erai+1080+hevc&c=0_0&f=0"
+          # curl -L -o asl.xml "https://nyaa.si/?page=rss&q=Anne+Shirley+subspleas&c=0_0&f=0"
+          # curl -L -o feed1.xml "https://mikanani.me/RSS/MyBangumi?token=xxxxxxxxxxxxxxxx" # 请替换成你的真实地址
           # curl -L -o feed2.xml "https://example.com/another-rss.xml" # 如果有更多地址，继续添加
 
       - name: Commit and push if changed
