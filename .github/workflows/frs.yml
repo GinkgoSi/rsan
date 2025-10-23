@@ -1,5 +1,8 @@
 name: Fetch RSS Feeds
 
+permissions: # <--- 在这里添加
+  contents: write # <--- 在这里添加
+
 on:
   push:
     branches:
@@ -20,7 +23,9 @@ jobs:
           # 在下方添加你需要代理的 RSS 地址，每个地址一行
           # 格式为：curl -o <保存的文件名>.xml "<你的RSS地址>"
           # 示例：
-          curl -o opm3.xml "https://nyaa.si/?page=rss&q=one+punch+man+varyg+cr&c=0_0&f=0"
+          curl -L -o opm3.xml "https://nyaa.si/?page=rss&q=one+punch+man+varyg+cr&c=0_0&f=0"
+          #curl -L -o feed1.xml "https://mikanani.me/RSS/MyBangumi?token=xxxxxxxxxxxxxxxx" # 请替换成你的真实地址
+          # curl -L -o feed2.xml "https://example.com/another-rss.xml" # 如果有更多地址，继续添加
 
       - name: Commit and push if changed
         run: |
