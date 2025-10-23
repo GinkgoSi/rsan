@@ -20,9 +20,7 @@ jobs:
           # 在下方添加你需要代理的 RSS 地址，每个地址一行
           # 格式为：curl -o <保存的文件名>.xml "<你的RSS地址>"
           # 示例：
-          curl -o feed1.xml "https://example.com/rss1.xml"
-          curl -o feed2.xml "https://example.com/another-rss.xml"
-          curl -o opm2.xml "https://nyaa.si/?page=rss&q=one+punch+man+varyg+cr&c=0_0&f=0"
+          curl -o opm3.xml "https://nyaa.si/?page=rss&q=one+punch+man+varyg+cr&c=0_0&f=0"
 
       - name: Commit and push if changed
         run: |
